@@ -1,7 +1,7 @@
 # Ttt
 
 
-**TODO**
+**TODO**   
 How should a game go?  
     - Start  
     - p1 plays  
