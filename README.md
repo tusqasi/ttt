@@ -1,5 +1,6 @@
 # Ttt
 
+A tic-tac-toe game in elixir.
 
 **TODO**   
 How should a game go?  

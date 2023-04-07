@@ -51,6 +51,8 @@ defmodule TttTest do
   end
 
   test "Check draw conditions" do
+    draw_boards = [
+    <M-Esc>u]
   end
 
   test "Check winning conditions" do
