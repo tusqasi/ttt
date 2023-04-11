@@ -28,14 +28,14 @@ defmodule Ttt do
   end
 
   @impl true
-  def handle_call({player, input}, _from, board) when is_atom(player) and is_integer(input) do
+  def handle_call({player, input}, _from, board) when is_integer(input) do
     ## if board at input is -1,  put input and p1 at input
     ## if win, return win
     ## Done
     cond do
       # The position at which player wants to put the cross/nought is empty
       Map.get(board.board, input) == -1 ->
-        {:reply, {:ok, board}, %Ttt{board: %{board.board | input => player}}}
+        {:reply, {:ok, %Ttt{board: %{board.board | input => player}}}, %Ttt{board: %{board.board | input => player}}}
 
       # The position isn't empty and occupied
       true ->
